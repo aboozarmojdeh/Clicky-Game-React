@@ -8,67 +8,67 @@
     {
       "id": 2,
       "name": "Avocado",
-      "image": "./images/"
+      "image": "./images/avocado.png"
       
     },
     {
       "id": 3,
       "name": "Banana",
-      "image": "./images/"
+      "image": "./images/banana.png"
       
     },
     {
       "id": 4,
       "name": "Blackgrape",
-      "image": "./images/"
+      "image": "./images/black-grape.png"
      
     },
     {
       "id": 5,
       "name": "Cherry",
-      "image": "./images/"
+      "image": "./images/cherry.png"
       
     },
     {
       "id": 6,
       "name": "Lemon",
-      "image": "./images/"
+      "image": "./images/lemon.png"
       
     },
     {
       "id": 7,
       "name": "Mango",
-      "image": "./images/"
+      "image": "./images/mango.png"
      
     },
     {
       "id": 8,
       "name": "Orange",
-      "image": "./images/"
+      "image": "./images/orange.png"
       
     },
     {
       "id": 9,
       "name": "Pineapple",
-      "image": "./images/"
+      "image": "./images/pineapple.png"
       
     },
     {
       "id": 10,
       "name": "Redgrape",
-      "image": "./images/"
+      "image": "./images/red-grape.png"
      
     },
     {
       "id": 11,
       "name": "Strawberry",
-      "image": "./images/"
+      "image": "./images/strawberry.png"
      
     },
     {
       "id": 12,
       "name": "Watermelon",
-      "image": "./images/"
+      "image": "./images/watermelon.png"
      
     }
   ]

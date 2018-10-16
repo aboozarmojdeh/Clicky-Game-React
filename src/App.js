@@ -3,8 +3,15 @@ import Navbar from './components/Navbar';
 import Container from './components/Container';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import images from './images';
+// import images from './images';
 import fruits from "./fruits.json";
+let images=[];
+// console.log("fruits",newArr)
+
+fruits.forEach(function(element,i) {
+  images.push(element.image)
+  // console.log("fruits",images);
+});
 
 class App extends Component {
   state = {
@@ -14,18 +21,31 @@ class App extends Component {
     isClicked:[]
     
   };
+/////////////////////////////////////////////
+
+
+
+
+
+  //////////////////////////////////////////
+clickEvent=this.clickedFruitCheck.bind(this);
+
 //////////////////////////////////////////////
   randomFruits() {
     const newArr = images.slice();
+   
 
-    const shuffleArr = [];
+
+    // console.log("newArr:",newArr)
+
+    const randomArr = [];
 
     
     while (newArr.length > 0) {
-      shuffleArr.push(newArr.splice(Math.floor(Math.random() * newArr.length), 1)[0]);
+      randomArr.push(newArr.splice(Math.floor(Math.random() * newArr.length), 1)[0]);
     }
 
-    return shuffleArr;
+    return randomArr;
   }
   ////////////////////////////////////////////////////
 
@@ -36,7 +56,7 @@ clickedFruitCheck(fruitClicked){
   let highScore=this.state.highScore;
 
 const clickStatus = this.state.isClicked.slice();
-
+////////////////////////////////////////////////////////
 if(!this.state.isClicked.includes(fruitClicked)){
 
   if (score === highScore) {
@@ -51,6 +71,27 @@ if(!this.state.isClicked.includes(fruitClicked)){
   clickStatus.push(fruitClicked)
 
 }
+///////////////////////////////////////////////////
+if (this.state.isClicked.includes(fruitClicked)) {
+  let score = 0;
+  return this.setState({
+    score: score,
+    highScore: highScore,
+    allFruits: this.randomFruits(),
+    isClicked: []
+    
+  });
+}
+
+/////////////////////////////////////////////////////
+this.setState({
+  score: score,
+  highScore: highScore,
+  allFruits: this.randomFruits(),
+  isClicked: clickStatus
+});
+
+
 
 
 
@@ -73,6 +114,7 @@ if(!this.state.isClicked.includes(fruitClicked)){
         <Container
           
           fruits={this.state.allFruits}
+          clickEvent={this.clickEvent}
         
         />
         <Footer />

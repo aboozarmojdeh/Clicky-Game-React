@@ -7,3 +7,15 @@
   height: 50px;
   padding: 10px 0;
 }
+
+.myFoooterLink:hover{
+  color:grey;
+
+
+}
+.footer .copyRight{
+
+  padding-left:100px;
+
+}
+

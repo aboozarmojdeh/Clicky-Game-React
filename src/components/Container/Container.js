@@ -10,7 +10,7 @@ const Container = props => (
   >
   {console.log("props:",props.fruits)}
   
-    {props.fruits.map((fruit, i) => <Fruits image={fruit} key={i} />)}
+    {props.fruits.map((fruit, i) => <Fruits image={fruit} key={i} clickEvent={props.clickEvent}/>)}
 
     
   </div>
