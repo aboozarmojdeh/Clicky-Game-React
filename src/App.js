@@ -18,7 +18,8 @@ class App extends Component {
     score: 0,
     highScore: 0,
     allFruits: this.randomFruits(),
-    isClicked:[]
+    isClicked:[],
+    messageTop: 'Click an image to begin!',
     
   };
 /////////////////////////////////////////////
@@ -78,7 +79,8 @@ if (this.state.isClicked.includes(fruitClicked)) {
     score: score,
     highScore: highScore,
     allFruits: this.randomFruits(),
-    isClicked: []
+    isClicked: [],
+    messageTop: 'Incorrect guess! Game restarted'
     
   });
 }
@@ -88,7 +90,8 @@ this.setState({
   score: score,
   highScore: highScore,
   allFruits: this.randomFruits(),
-  isClicked: clickStatus
+  isClicked: clickStatus,
+  messageTop: 'You Guessed Correctly!'
 });
 
 
@@ -108,6 +111,7 @@ this.setState({
         <Navbar
           score={this.state.score}
           highScore={this.state.highScore}
+          messageTop={this.state.messageTop}
          
         />
         <Header />

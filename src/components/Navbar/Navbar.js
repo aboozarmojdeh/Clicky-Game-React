@@ -4,7 +4,7 @@ import './Navbar.css';
 const Navbar = props => (
   <div className="navbar ">
     <div>Clicky Game</div>
-    <div ></div>
+    <div className="messageTop">{props.messageTop}</div>
     <div>
 
     {console.log("score:",props)}

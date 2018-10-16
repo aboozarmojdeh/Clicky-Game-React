@@ -3,9 +3,9 @@
 A front end react app memory game! Try to click on all the characters without repeating yourself.
 try out the game here: 
 * [Clicky Game on Heroku](https://clickygamereactaboozar.herokuapp.com/)
-* [Clicky Game on Github](https://aboozarmojdeh.github.io/Clicky-Game-React/)
 
-![Demo](./public/assets/clicky.png)
+
+![Demo](./public/images/clicky.png)
 
 
 ## Prerequesites
